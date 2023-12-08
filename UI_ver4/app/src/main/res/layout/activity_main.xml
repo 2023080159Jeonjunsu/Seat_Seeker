@@ -1,0 +1,330 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <!-- 상단 정보 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KTX-산천 221"
+            android:textSize="30sp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="출발역 : 진주역"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="호차번호 : 1호차"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <!-- 수평으로 나열된 두 개의 테이블 레이아웃 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- 첫 번째 테이블 레이아웃 -->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="  창측               통로측">
+                </TextView>
+
+                <!-- 1행 -->
+                <TableRow>
+                    <Button
+                        android:id="@+id/btnA1"
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:text="A1"
+                        android:backgroundTint="@color/gray"
+                        android:textColor="@color/black" />
+                    <Button
+                        android:id="@+id/btnB1"
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:text="B1"
+                        android:backgroundTint="@color/gray"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+                <!-- 2행 -->
+                <TableRow>
+                    <Button
+                        android:id="@+id/btnA2"
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:text="A2"
+                        android:backgroundTint="@color/gray"
+                        android:textColor="@color/black" />
+                    <Button
+                        android:id="@+id/btnB2"
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:text="B2"
+                        android:backgroundTint="@color/gray"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+                <!-- 3행 -->
+                <TableRow>
+                    <Button
+                        android:id="@+id/btnA3"
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:text="A3"
+                        android:backgroundTint="@color/gray"
+                        android:textColor="@color/black" />
+                    <Button
+                        android:id="@+id/btnB3"
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:text="B3"
+                        android:backgroundTint="@color/gray"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+                <!-- 4행 -->
+                <TableRow>
+                    <Button
+                        android:id="@+id/btnA4"
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:text="A4"
+                        android:backgroundTint="@color/gray"
+                        android:textColor="@color/black" />
+                    <Button
+                        android:id="@+id/btnB4"
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:text="B4"
+                        android:backgroundTint="@color/gray"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+                <!-- 5행 -->
+                <TableRow>
+                    <Button
+                        android:id="@+id/btnA5"
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:text="A5"
+                        android:backgroundTint="@color/gray"
+                        android:textColor="@color/black" />
+                    <Button
+                        android:id="@+id/btnB5"
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:text="B5"
+                        android:backgroundTint="@color/gray"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+                <!-- 6행 -->
+                <TableRow>
+                    <Button
+                        android:id="@+id/btnA6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:text="A6"
+                        android:backgroundTint="@color/gray"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/btnB6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:backgroundTint="@color/gray"
+                        android:text="B6"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+            </TableLayout>
+
+            <!-- 간격을 조절하기 위한 여백 -->
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <!-- 두 번째 테이블 레이아웃 -->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="  창측               통로측">
+                </TextView>
+
+                <!-- 1행 -->
+                <TableRow>
+                    <Button
+                        android:id="@+id/btnC1"
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:text="C1"
+                        android:backgroundTint="@color/gray"
+                        android:textColor="@color/black" />
+                    <Button
+                        android:id="@+id/btnD1"
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:text="D1"
+                        android:backgroundTint="@color/gray"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+                <!-- 2행 -->
+                <TableRow>
+                    <Button
+                        android:id="@+id/btnC2"
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:text="C2"
+                        android:backgroundTint="@color/gray"
+                        android:textColor="@color/black" />
+                    <Button
+                        android:id="@+id/btnD2"
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:text="D2"
+                        android:backgroundTint="@color/gray"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+                <!-- 3행 -->
+                <TableRow>
+                    <Button
+                        android:id="@+id/btnC3"
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:text="C3"
+                        android:backgroundTint="@color/gray"
+                        android:textColor="@color/black" />
+                    <Button
+                        android:id="@+id/btnD3"
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:text="D3"
+                        android:backgroundTint="@color/gray"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+                <!-- 4행 -->
+                <TableRow>
+                    <Button
+                        android:id="@+id/btnC4"
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:text="C4"
+                        android:backgroundTint="@color/gray"
+                        android:textColor="@color/black" />
+                    <Button
+                        android:id="@+id/btnD4"
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:text="D4"
+                        android:backgroundTint="@color/gray"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+                <!-- 5행 -->
+                <TableRow>
+                    <Button
+                        android:id="@+id/btnC5"
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:text="C5"
+                        android:backgroundTint="@color/gray"
+                        android:textColor="@color/black" />
+                    <Button
+                        android:id="@+id/btnD5"
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:text="D5"
+                        android:backgroundTint="@color/gray"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+                <!-- 6행 -->
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/btnC6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:backgroundTint="@color/gray"
+                        android:text="C6"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/btnD6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:backgroundTint="@color/gray"
+                        android:text="D6"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/blue"
+            android:text="Exit"
+            android:layout_gravity="end">
+        </Button>
+
+    </LinearLayout>
+</LinearLayout>
